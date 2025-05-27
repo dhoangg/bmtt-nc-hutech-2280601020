@@ -34,13 +34,18 @@
             color: #343a40;
             font-weight: 700;
         }
+        .greeting {
+            color: #555;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">An Toàn Thông Tin</a>
+            <a class="navbar-brand" href="/">An Toàn Thông Tin</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,7 +55,13 @@
                         <a class="nav-link" href="/caesar">Caesar Cipher</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/rsa">RSA Cipher</a>
+                        <a class="nav-link" href="/vigenere">Vigenère Cipher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/railfence">Rail Fence Cipher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/playfair">Playfair Cipher</a>
                     </li>
                 </ul>
             </div>
@@ -59,9 +70,10 @@
 
     <div class="container my-5">
         <div class="card p-4">
-            <img src="https://file1.hutech.edu.vn/file/editor/homepage/stories/hinh34/logo%20CNC-01.png" class="card-img-top mx-auto d-block" alt="hutech" style="width: 30%;">
+            <img src="{{ url_for('static', filename='hutech.png') }}" class="card-img-top mx-auto d-block" alt="hutech" style="width: 30%;">
             <div class="card-body text-center">
                 <h4 class="card-title mt-4">BÀI THỰC HÀNH BẢO MẬT THÔNG TIN NĂNG CAO</h4>
+                <p class="greeting">Đặng Duy Hoàng 2280601020 Xin Chào!</p>
             </div>
         </div>
     </div>
